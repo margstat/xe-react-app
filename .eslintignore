@@ -1,0 +1,4 @@
+# Ignore files and directories from lint
+
+.babelrc
+resources

@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.MuiPaper-root {
+  padding: 50px;
+  margin: 100px;
+  background-color: #e5e4dbd9 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .MuiPaper-root {
+    margin: 50px;
+  }
+}
+.MuiGrid-root {
+  flex-grow: 1;
+  max-width: 752vh;
+  background-color: #efeded;
+}
+
+.MuiImageList-root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  height: 177px;
+  grid-template-columns: repeat(12, 1fr) !important;
+}
+@media only screen and (max-width: 1100px) {
+  .MuiImageList-root {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .MuiImageList-root {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+.MuiImageListItem-root {
+  height: 100%;
+}
+img {
+  max-height: 85px;
+}
+
+.remove-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Upload image';
+  display: inline-block;
+  text-align: center;
+  background: #3f51b5;
+  border: 1px solid #999;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10pt;
+  color: white;
+  width:100%;
+}
+.custom-file-input {
+  width: 100%;
+  border-radius: 6px;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.field-container {
+  width: 100%;
+}
+
+.css-yk16xz-control, .css-1pahdxg-control {
+  height: 55px;
+  background-color: #efeded !important;
+  border: 1px solid #b9b7b7;
+}
+.css-26l3qy-menu {
+  background-color: #efeded !important;
+}
+.button-submit {
+  margin: 2% 45%;
+  padding: 6px 50px;
+  border-radius: 6px;
+  background-color: #efeded;
+}
